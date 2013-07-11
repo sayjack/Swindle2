@@ -21,7 +21,7 @@ window.addEvent('domready', function() {
             $('spanId_prompt').set('html', 'Please fill in both fields.');
         } else if(email != email2) {
             $('spanId_prompt').setStyle('visibility', 'visible');
-            $('spanId_prompt').set('html', "Passwords don't match mate.");
+            $('spanId_prompt').set('html', "Passwords don't match!");
         } else {
             var passReset = new Request.JSON({
                 url: '/confirm_new_pass',
