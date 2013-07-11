@@ -95,7 +95,7 @@ class Swindle:
         time_stamp = int(time.time())
         if temp_pass_in_DB is None:
             response = 'nuts' 
-        elif time_stamp - int(temp_pass_in_DB[3]) > 60:
+        elif time_stamp - int(temp_pass_in_DB[3]) > 1800:
             response = '<h1>You temporary password has expired!  Go get another temporary password <a href="../pass_reset">here</a></h1>'
         else:
             sql_step2 = 'UPDATE users SET password_db = ? WHERE email_db = ?'
