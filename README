@@ -8,8 +8,7 @@ Requirements:
 
 Instructions:
 - Make sure you have the following installed on your system; python 3 (http://www.python.org/download/), cherrypy 3.2.2 (http://download.cherrypy.org/cherrypy/3.2.2/), PassLib 1.6.1 (https://code.google.com/p/passlib/downloads/list)
-- Run create_db.py to make the initial database.
-- Move the newly created users.db file into the /data/database directory
+- Initial empty database file already created.
 - Edit lines 22 and 23 in email_pass.py file which is in the backend directory.  You will need to do this so that user email notifications work, see comments in file.
 - Run swindle_main.py to start the cherrypy server.
 - Open a browser and got to http://localhost:8080/.
