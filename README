@@ -1,0 +1,20 @@
+Swindle - Working Example Website Registration and User Authentication
+a simple working example of a user registration and login webapp using cherrypy and Sqlite.
+
+Requirements:
+- python 3.2.3
+- cherrypy 3.2.2
+- PassLib 1.6.1
+
+Instructions:
+- Make sure you have the following installed on your system; python 3.2.3, cherrypy 3.2.2, PassLib 1.6.1
+- Run create_db.py to make the initial database.
+- Run swindle_main.py to start the cherrypy server.
+- Open a browser and got to http://localhost:8080/.
+
+
+Overview:
+ - Simple framework: Frontend, Backend, and Data
+ - The framework reflects the directory structure so very little abstraction used to describe and understand functionality.
+ - The passwords are 256-bit encrypted before being stored in the database.
+ - Temporary passwords are emailed to the registered user, are fully random and expire within 30 minutes.
