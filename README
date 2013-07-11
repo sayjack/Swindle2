@@ -2,7 +2,7 @@ Swindle - Working Example Website Registration and User Authentication
 a simple working example of a user registration and login webapp using cherrypy and Sqlite.
 
 Requirements:
-- python 3.2.3
+- python 3
 - cherrypy 3.2.2
 - PassLib 1.6.1
 
